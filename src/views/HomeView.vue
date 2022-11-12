@@ -1,18 +1,22 @@
 <template>
   <div class="home">
+    {{ a }}
+    <n-icon size="40">
+      <game-controller-outline />
+    </n-icon>
+    <n-button type="success"> Success </n-button>
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    22222 333
+    <HelloWorld />
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
+<script lang="ts" setup>
+import { GameControllerOutline } from "@vicons/ionicons5";
 import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
-
-export default defineComponent({
-  name: "HomeView",
-  components: {
-    HelloWorld,
-  },
+const a = ref(111111);
+onRenderTriggered(() => {
+  console.log(11111);
+  debugger;
 });
 </script>

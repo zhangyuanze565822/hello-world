@@ -5,6 +5,12 @@
   </nav>
   <router-view />
 </template>
+<script lang="ts" setup>
+onRenderTriggered(() => {
+  console.log(11111);
+  debugger;
+});
+</script>
 
 <style lang="scss">
 #app {

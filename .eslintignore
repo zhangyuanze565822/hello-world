@@ -1,0 +1,6 @@
+*.html
+**/.git
+**/node_modules
+public
+vue.config.js
+*.d.ts
